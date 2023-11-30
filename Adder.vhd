@@ -3,13 +3,13 @@ use ieee.std_logic_1164.all;
 library work;
 use work.Gates.all;
 
-entity sixteen_bit_adder is
+entity adder is
 	port(A, B: in std_logic_vector(15 downto 0);
 		 S: out std_logic_vector(15 downto 0); 
 		 C: out std_logic);
-end entity sixteen_bit_adder;
+end entity adder;
 
-architecture struct of sixteen_bit_adder is
+architecture struct of adder is
 	signal sig: std_logic_vector(14 downto 0);
 	component full_adder is
 		port (A, B, Ci: in std_logic; Sum, Co: out std_logic);
