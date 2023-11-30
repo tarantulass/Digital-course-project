@@ -1,9 +1,9 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity right_extend is
+entity right_extender is
 	port(IR0_7: in std_logic_vector(7 downto 0); ls_out : out std_logic_vector(15 downto 0));
-end entity right_extend;
+end entity right_extender;
 
 architecture Struct of least_significant is
 
